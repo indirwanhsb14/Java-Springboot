@@ -1,0 +1,54 @@
+-- Adminer 4.8.1 MySQL 5.5.5-10.4.24-MariaDB dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+USE `kampus`;
+
+SET NAMES utf8mb4;
+
+DROP TABLE IF EXISTS `nilai`;
+CREATE TABLE `nilai` (
+  `id_nim` int(11) NOT NULL,
+  `kode_matakuliah` int(11) NOT NULL,
+  `nilai` tinytext NOT NULL,
+  KEY `id_nim` (`id_nim`),
+  KEY `kode_matakuliah` (`kode_matakuliah`),
+  CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`id_nim`) REFERENCES `tabel_mahasiswa` (`id_nim`),
+  CONSTRAINT `nilai_ibfk_2` FOREIGN KEY (`kode_matakuliah`) REFERENCES `tabel_matakuliah` (`kode_matakuliah`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `nilai` (`id_nim`, `kode_matakuliah`, `nilai`) VALUES
+(1,	1,	'A'),
+(1,	2,	'E'),
+(2,	1,	'C'),
+(2,	2,	'A');
+
+DROP TABLE IF EXISTS `tabel_mahasiswa`;
+CREATE TABLE `tabel_mahasiswa` (
+  `id_nim` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(50) NOT NULL,
+  `alamat` tinytext NOT NULL,
+  `tgl_lahir` date NOT NULL,
+  PRIMARY KEY (`id_nim`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tabel_mahasiswa` (`id_nim`, `nama`, `alamat`, `tgl_lahir`) VALUES
+(1,	'Indirwan Ihsan Hasibuan',	'JL.Cilenggang',	'1997-10-14'),
+(2,	'Alexander',	'Yunani',	'1809-12-15');
+
+DROP TABLE IF EXISTS `tabel_matakuliah`;
+CREATE TABLE `tabel_matakuliah` (
+  `kode_matakuliah` int(11) NOT NULL AUTO_INCREMENT,
+  `nama_matakuliah` varchar(50) NOT NULL,
+  `sks` int(11) NOT NULL,
+  PRIMARY KEY (`kode_matakuliah`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tabel_matakuliah` (`kode_matakuliah`, `nama_matakuliah`, `sks`) VALUES
+(1,	'Machine Learning',	3),
+(2,	'Database',	3);
+
+-- 2022-06-20 17:01:44
