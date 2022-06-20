@@ -1,0 +1,17 @@
+<employees>
+    <employee id ="111">
+        <firstname>Indirwan</firstname>
+        <lastname>Hasibuan</lastname>
+        <location>Swiss</location>
+    </employee>
+    <employee id ="222">
+        <firstname>Alex</firstname>
+        <lastname>Ferguso</lastname>
+        <location>Inggris</location>
+    </employee>
+    <employee id ="333">
+        <firstname>David</firstname>
+        <lastname>Freezor</lastname>
+        <location>USA</location>
+    </employee>
+</employees>

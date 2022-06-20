@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users>
+    <user id="1">
+        <id>24</id>
+        <name></name>
+        <gender>Laki-laki</gender>
+        <role>Presiden</role>
+    </user>
+
+    <user id="2">
+        <id>45</id>
+        <name>Ferguso</name>
+        <gender>Laki-laki</gender>
+        <role>Property Agent</role>
+    </user>
+
+    <user id="3">
+        <id>8</id>
+        <name>Momonosuke</name>
+        <gender>Laki-laki</gender>
+        <role>Shogun Wano</role>
+    </user>
+
+    <user id="4">
+        <id>17</id>
+        <name>Mas Arif</name>
+        <gender>Laki-laki</gender>
+        <role>Trainer Hacktiv8</role>
+    </user>
+</users>
