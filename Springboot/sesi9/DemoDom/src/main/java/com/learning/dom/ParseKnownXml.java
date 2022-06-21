@@ -1,6 +1,7 @@
 package com.learning.dom;
 
 import java.io.File;
+import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -41,6 +42,10 @@ public class ParseKnownXml {
                 System.out.println("Location : " + eElement.getElementsByTagName("location").item(0).getTextContent());
             }
         }
+    }
+
+    public List<User> parseUsers() {
+        return null;
     }
     
 

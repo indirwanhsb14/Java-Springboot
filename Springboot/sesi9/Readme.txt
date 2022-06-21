@@ -81,3 +81,5 @@ utk run folder app
 mvn exec:java -Dexec.mainClass="com.ParsingXmlSax.module.Mail"
 mvn exec:java -Dexec.mainClass="com.learning.dom.ParseKnownXMLStructure"
 mvn exec:java -q
+
+alexa :buat file xml
