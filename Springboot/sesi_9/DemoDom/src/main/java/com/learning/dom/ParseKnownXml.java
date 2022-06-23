@@ -12,7 +12,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class ParseKnownXml {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args, Document document2) throws Exception{
         
         //get document builder
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -21,7 +21,7 @@ public class ParseKnownXml {
         //build document
         Document document = builder.parse(new File("main/resources/employees.xml"));
         //normalize xml structure
-        document.getDocumentElement().normalize();
+        document2.getDocumentElement().normalize();
 
         Element root = document.getDocumentElement();
         System.out.println(root.getNodeName());
@@ -45,6 +45,10 @@ public class ParseKnownXml {
     }
 
     public List<User> parseUsers() {
+        return null;
+    }
+
+    public List<User> parseUser() {
         return null;
     }
     

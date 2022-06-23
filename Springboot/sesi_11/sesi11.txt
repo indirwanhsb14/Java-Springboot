@@ -262,7 +262,7 @@ Table vs Collection
 
 swagger
 cara buat swagger:
-1. File > new > other >
+1. File > new > other > Spring > 
 2. Tunggu download
 3. Ganti versi release > krn kita pakai versi 2, jd menyesuaikan, swagger v.1,2 dan 3. (biar stabil atau support)
 
@@ -281,7 +281,8 @@ cara buat swagger:
 
 5.Buat contoh db di 
   Terus di resources, copy dibawah dan letak kan di application.properties
-  # SERVER CONFIG
+=====================  
+# SERVER CONFIG
 server.port=8080
 
 #MySQL Connection
@@ -320,3 +321,5 @@ Buat manggil controller nya :
 		</dependency>
 
 cara muncul boot dashboard: windows > show view > other > boot dashboard
+
+

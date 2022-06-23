@@ -256,11 +256,13 @@ db.createCollection("barang", {
 	}
 })
 
-Table vs Collection
+=========================================================
 
-=============================================
+SWAGGER
 
-swagger
+=========================================================
+
+
 cara buat swagger:
 1. File > new > other >
 2. Tunggu download
@@ -320,3 +322,7 @@ Buat manggil controller nya :
 		</dependency>
 
 cara muncul boot dashboard: windows > show view > other > boot dashboard
+
+cara run: 
+boot dashboard > klik kanan > di (re)start dulu jika belum, kemudian dari logo arah panah hijau klik kanan >
+open web browser atau : http://localhost:8080/swagger-ui.html#!/hello45controller/sayHelloUsingGET
