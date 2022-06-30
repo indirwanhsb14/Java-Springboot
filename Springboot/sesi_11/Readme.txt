@@ -1,4 +1,4 @@
-sesi 11;
+<h2>sesi 11</h2>
 NoSQL Database, Gunakan MongoDB
 
 Konsep Dasar : JSON vs BSONMongoDB menyimpan data dalam bentuk BSON document, lalu apa itu BSON dan adakah hubungannya dengan JSON?JSON adalah singkatan dari JavaScript Object Notation, JSON menjadi salah satu format data yang paling banyak digunakan untuk transfer data antara browser dan server.Pada dasarnya JSON hanya sebuah text yang memiliki format/syntax sebagai berikut:{"key" : "value"}Sedangkan BSON adalah singkatan dari Binary JSON, BSON memiliki beberapa keunggulan dibandingkan denganJSON diantaranya tingkat parsing yang lebih cepat dan mendukung lebih banyak tipe data native seperti :dates dan binary data.Introduction of NoSQL 
